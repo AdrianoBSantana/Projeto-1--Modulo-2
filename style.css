@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family:love ;
+    src: url('./media/fonts/Pokemon\ Classic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@keyframes smoke {
+   from{ 
+        transform: translate(-5px,-5px);
+        opacity:0.5;
+        filter: blur(5px);
+    }
+}
+
+.body{
+    font-family:'love';
+}
+
+.main {
+    position: relative;
+}
+
+.main:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height:100%;
+    opacity: 0.4;
+    z-index: -1;
+    background-image:url(./media/img/uwp101753.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    animation: 10s 10ms ease-in-out infinite alternate smoke;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 14.8vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 80vh;
+}
+
+h1{  
+    height: 50px;
+    font-family:'love';
+    font-weight: bold;
+    background-color:  #E8998D;
+    background-clip: text;
+    font-size: 22px;
+    text-align: center;  
+}
+h2{
+    font-family:'love';
+    font-weight: bold;
+    background-color: #000000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    text-align: center;
+   
+
+}
+
+.section1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.text {
+    font-family:'love';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+    border: 2px solid #EED2CC;
+    background-color: #6C9A8B ;
+    
+}
+
+.eevee {
+
+    width: 250px;
+    height: 250px;
+    border: 2px solid #EED2CC;
+    margin-top: 10px;
+    background-color: #6C9A8B;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.button {
+    font-family:'love';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #EED2CC;
+    border-top-left-radius: 0px;
+    border-top-right-radius:0px ;
+    margin-top: 10px;
+    background-color: #6C9A8B;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 20px;
+
+
+    
+}
+
+.button:hover {
+    background-color: #5E8578;
+    border-color: #1E2322;
+    
+}
+
+#eevee0 {
+    background-image: url("./media/img/eevee.png");
+
+}
+
+#eevee1 {
+    background-image: url("./media/img/espeon.png");
+    
+}
+
+#eevee2 {
+    background-image: url("./media/img/flareon.png");
+   
+}
+
+#eevee3{
+    background-image: url("./media/img/glaceon.png");
+   
+}
+
+#eevee4 {
+    background-image: url("./media/img/jolteon.png");
+    
+}
+
+#eevee5 {
+    background-image: url("./media/img/leafeon.png");
+
+}
+
+#eevee6 {
+    background-image: url("./media/img/sylveon.png");
+
+}
+#eevee7 {
+    background-image: url("./media/img/umbreon.png");
+
+}
+#eevee8 {
+    background-image: url("./media/img/vaporeon.png");
+    
+}
